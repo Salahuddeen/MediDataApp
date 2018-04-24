@@ -7,7 +7,10 @@ from .customModels import (
     Hospital,
     OTCMedicine,
     Patient,
-    Treatment
+    Treatment,
+    Appointment,
+    OTCMeds,
+    patientIllness,
 )
 
 admin.site.register(Ailments)
@@ -16,3 +19,6 @@ admin.site.register(Hospital)
 admin.site.register(OTCMedicine)
 admin.site.register(Patient)
 admin.site.register(Treatment)
+admin.site.register(Appointment)
+admin.site.register(OTCMeds)
+admin.site.register(patientIllness)

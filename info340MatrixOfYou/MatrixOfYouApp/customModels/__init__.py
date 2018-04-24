@@ -4,3 +4,6 @@ from .hospital import Hospital
 from .otcMedication import OTCMedicine
 from .patient import Patient
 from .treatment import Treatment
+from .relations.appointments import Appointment
+from .relations.otcTaken import OTCMeds
+from .relations.patientAilments import patientIllness

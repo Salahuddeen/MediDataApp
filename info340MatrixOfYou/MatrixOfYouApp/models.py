@@ -8,4 +8,7 @@ from MatrixOfYouApp.customModels import (
     OTCMedicine,
     Patient,
     Treatment,
+    Appointment,
+    OTCMeds,
+    patientIllness,
 )
