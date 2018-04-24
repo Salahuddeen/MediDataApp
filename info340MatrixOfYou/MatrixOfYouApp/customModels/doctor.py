@@ -7,10 +7,11 @@ from django.db.models import (
     DateTimeField,
     ForeignKey,
 )
+from .hospital import Hospital
 
 class Doctor(models.Model):
     doctorID = UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    doctorFirstname = CharField(max_length=50, required=True)
-    doctorLastname = CharField(max_length=50, required=True)
-    doctorPhone = IntegerField(max_length=15)
-    doctorHospital = ForeignKey(Hospital, required=False)
+    doctorFirstname = CharField(max_length=50)
+    doctorLastname = CharField(max_length=50)
+    doctorPhone = IntegerField()
+    doctorHospital = ForeignKey(Hospital, blank=True, null=True, on_delete='CASCADE')
