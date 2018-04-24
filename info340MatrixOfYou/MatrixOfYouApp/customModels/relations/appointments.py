@@ -16,4 +16,4 @@ class Appointment(models.Model):
     appointmentDate = DateTimeField()
     reasonForVisiting = CharField(max_length=500)
     symptoms = CharField(max_length=500)
-    treatment = ForeignKey(Treatment, on_delete='CASCADE')
+    treatment = ForeignKey(Treatment,blank=True, null=True, on_delete='CASCADE')
