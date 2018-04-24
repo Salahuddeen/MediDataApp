@@ -5,6 +5,6 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^base', views.template, name='homepage'),
+    url(r'^base', views.template, name='template'),
     url(r'^', views.homepage, name='__homepage'),
 ]
