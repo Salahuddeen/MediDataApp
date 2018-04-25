@@ -20,8 +20,8 @@
 
             {% for patient in patient_catalog %}
             <tr> 
-              <td><a href= "patient.get_absolute_url }}">{{ patient.patientFirstname }}</a></td>
-              <td><a href= "patient.get_absolute_url }}">{{ patient.patientLastname }}</a></td>
+              <td><a href= "{% url 'patientDetails' patient.patientID %}">{{ patient.patientFirstname }}</a></td>
+              <td><a href= "{{ patient.get_absolute_url }}">{{ patient.patientLastname }}</a></td>
             </tr>
             {% endfor %}
 

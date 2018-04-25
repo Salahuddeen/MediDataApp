@@ -35,7 +35,7 @@ def resetPatientCode(request):
 def viewAllHospitals(request):
     return render(request, 'patientInfo.html', context={})
 
-class patientCatalog(generic.View):
+class patientCatalog(generic.ListView):
     model = Patient
     context_object_name = 'patient_catalog'
     template_name = 'GUI/patientCatalog.html'
