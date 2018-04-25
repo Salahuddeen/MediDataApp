@@ -14,22 +14,14 @@
             <tr>
               <th>Patient Firstname </th>
               <th>Patient Lastname </th>
-              <th>Patient Phone Number </th>
-              <th>Patient Address </th>
-              <th>Patient Guardian Contact</th>
-              <th>Patient Guardian Name </th>
             </tr>
           </thead>
           <tbody>
 
-            {% for patient in patient %}
-            <tr>
-              <td>{{ patient.patientFirstname }}</td>
-              <td>{{ patient.patientLastname }}</td>
-              <td>{{ patient.patientPhone }}</td>
-              <td>{{ patient.patientAddress }}</td>
-              <td>{{ patient.patientAlternateName }}</td>
-              <td>{{ patient.patientAlternateContact }}</td>
+            {% for patient in patient_catalog %}
+            <tr> 
+              <td><a href= "patient.get_absolute_url }}">{{ patient.patientFirstname }}</a></td>
+              <td><a href= "patient.get_absolute_url }}">{{ patient.patientLastname }}</a></td>
             </tr>
             {% endfor %}
 

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class='container'>
+    <div class="row">
+      <div class="col text-center"><h1> Patient Info </h1></div>
+    </div>
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+        <h1> {{ patientDetail.patientFirstname }} {{ patientDetail.patientLastname }}</h1>
+
+        <p> Patient Address : {{patientDetail.patientAddress }}</p>
+        <p> patient Phone : {{ patientDetail.patientPhone }} </p>
+        <p> patient Alternate contact : {{ patientDetail.patientAlternateName }} </p>
+        <p> patient Alternate phone: {{ patientDetail.patientAlternateContact }} </p>
+      </div>
+      <div class="col">
+        
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}
